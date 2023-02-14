@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+
+    <navbar id="navbar">
+        <div class="navbar-container">
+            <img src="imagens/logo6.png" alt="" class="logo1" />
+        </div>
+    </navbar>
+
+
+    <main>
+        <div class="box">
+            <form action="formulario">
+                <fieldset class="fieldset">
+                    <legend><b>Fórmulario</b></legend>
+                    <br>
+
+                    <div class="inputBox">
+                        <label for="Nome">Nome:</label>
+                        <input type="text" id="nome" class="inputUser" required>
+                    </div> <br><br>
+
+                    <div class="inputBox">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" class="inputUser" required>
+                    </div> <br><br>
+
+                    <div class="inputBox">
+                        <label for="ano_nascimento"><b>Data de nascimento:</b></label>
+                        <input type="date" name="ano_nascimento" id="nascimento" class="inputUser" required>
+                    </div> <br><br>
+
+                    <div class="inputBox">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" class="inputUser" required>
+                    </div> <br><br>
+
+                    <div class="inputBox">
+                        <label for="Nome">Telefone:</label>
+                        <input type="tel" id="telefone" class="inputUser" required>
+                    </div> <br><br>
+
+                    <div class="inputBox">
+                        <label for="cpf">CPF:</label>
+                        <input type="cpf" id="cpf" class="inputUser" required>
+                    </div> <br><br>
+
+                    <div class="inputBox">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" class="inputUser" required>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" class="inputUser" required>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" class="inputUser" required>
+                    </div>
+                    <br><br>
+
+                </fieldset>
+            </form>
+
+            <br><br>
+            <button class="submit" onclick="guardaFormulario()">Enviar</button><br><br>
+            <button id="btn_imp" class="submit2">Imprimir</button>
+
+            <div id="imprimir">
+
+                <div id="nome1"></div>
+                <div id="sobrenome1"></div>
+                <div id="nascimento1"></div>
+                <div id="email1"></div>
+                <div id="telefone1"></div>
+                <div id="cpf1"></div>
+                <div id="endereco1"></div>
+                <div id="sobrenome1"></div>
+                <div id="bairro1"></div>
+                <div id="cidade1"></div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <br><br>
+    <footer id="footer">
+        <div class="footer-content">
+            <img src="imagens/logo6.png" alt="" class="logo1">
+            <ul class="footer-menu">
+                <p>Empresa</p>
+                <li class="footer-menu-item">
+                    Sobre
+                </li>
+                <li class="footer-menu-item">
+                    Empregos
+                </li>
+                <li class="footer-menu-item">
+                    For the records
+                </li>
+            </ul>
+
+            <ul class="footer-menu">
+                <p>Comunidades</p>
+                <li class="footer-menu-item">
+                    Desenvolvedores
+                </li>
+                <li class="footer-menu-item">
+                    Inverstidores
+                </li>
+                <li class="footer-menu-item">
+                    Fornecedores
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
